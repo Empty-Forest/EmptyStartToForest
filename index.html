@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./websites/index/EmptyForestico.ico"><!--网页图标-->
+    <link rel="stylesheet" href="./css/sidebarcss.css">
+    <link rel="stylesheet" href="./css/homecss.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>EmptyForest导航网站</title>
+    
+</head>
+<body>
+    <!--左侧侧边栏，默认为打开状态-->
+    <div class="sidebar">
+        <!--网站logo占顶部-->
+        <header>
+            <a class="logo" href="./index.html">
+                <img src="./websites/index/EmptyForestNavigationWebsiteLogo.png" class="websitelogo">
+            </a>
+        </header>
+        <!--文字导航列表占中间-->
+        <main>
+            <div class="nav-lists">
+                <!--总分类-->
+                <ul class="sum-lists">
+                    <li class="sub-list">
+                        <a href="#">
+                            <i class='bx bxs-star' ></i>
+                            <span>常用</span>
+                        </a>
+                    </li>
+                    <li class="sub-list">
+                        <a href="#">
+                            <i class='bx bx-key'></i>
+                            <span>实用工具</span>
+                            <i class='bx bxs-chevron-down arrow'></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>网盘资源</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>图像设计</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>信息生成</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!--关于本站占底部-->
+        <footer>
+            <div class="about">
+                <a href="#">
+                    <i class='bx bxs-home-alt-2'></i>
+                    <span>关于本站</span>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <!--右侧主页导航-->
+    <div class="home">
+        <!--头部为侧边栏伸缩键，搜索功能，GitHub链接-->
+        <header>
+            <!--侧边栏开关控制-->
+            <i class='bx bx-menu'></i>
+            <!--搜索栏-->
+            <div class="searchbar">
+                <form action="/search" class="search">
+                    <select class="engineselect">
+                        <option value="bing" data-url="https://www.bing.com/search?q={query}">必应</option>
+                        <option value="google" data-url="https://www.google.com/search?q={query}">谷歌</option>
+                        <option value="baidu" data-url="https://www.baidu.com/s?wd={query}">百度</option>
+                    </select>
+                    <div class="search-main">
+                        <input type="text" class="search-input" placeholder="输入以搜索...">
+                        <button class="search-button" type="submit">搜索</button>
+                    </div>
+                </form>
+            </div>
+            <!--Github图标-->
+            <div class="github">
+                <a href="https://github.com/Empty-Forest" target="_blank" rel="noopener noreferrer nofollow">
+                    <i class='bx bxl-github'>Github</i>
+                </a>
+            </div>
+        </header>
+        <!--中间为导航-->
+        <main>
+
+        </main>
+        <!--末尾留一些备注-->
+        <footer>
+
+        </footer>
+    </div>
+<!--脚本-->
+    <script src="./js/search.js"></script>
+    <script>
+        /*控制子列表展开*/
+        let showarrow = document.querySelectorAll(".arrow");
+        for(var i =0;i<showarrow.length;i++){
+            showarrow[i].addEventListener("click",(e)=>{
+                let arrowParent = e.target.parentElement.parentElement;
+                arrowParent.classList.toggle("show");
+            })
+        }
+        /*控制侧边栏展开及关闭*/
+        let siderbar = document.querySelector(".sidebar");
+        let closeButton = document.querySelector(".bx-menu");
+        let logoImage = document.querySelector(".websitelogo")/*改变网站logo图适应*/
+        closeButton.addEventListener("click",()=>{
+            siderbar.classList.toggle("close");
+            if(siderbar.className.match("sidebar close")){
+                logoImage.src="./websites/index/EmptyForest.jpg";
+            }
+            else{
+                logoImage.src="./websites/index/EmptyForestNavigationWebsiteLogo.png";
+            }
+        })
+    </script>
+</body>
+</html>

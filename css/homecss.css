@@ -1,0 +1,72 @@
+.home{
+    width: calc(100% - 240px);/*宽度为侧边栏剩余位置的宽度*/
+    left: 240px;/*离左侧的大小*/
+    height: 100%;
+    position: fixed;/*固定整体大小位置*/
+    background-color: blueviolet;
+    transition: all 0.3s ease;
+}
+/* 主页导航上部 */
+.home header{
+    height: 80px;
+    background-color: aliceblue;
+}
+.home header .bx-menu{
+    font-size: 300%;
+    padding: 10px 5px;
+    cursor: pointer;/*移至上面时鼠标样式改变为点击样式*/
+}
+.home header .searchbar{
+    display: inline;
+    position: fixed;
+    left: 25%;
+    right: 10%;
+    margin: 10px 0;
+    padding: 10px 100px;
+    white-space: nowrap;
+}
+.home header .searchbar .search{
+    display: flex;
+}
+.home header .searchbar .search .engineselect{
+    font-size: 200%;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: deepskyblue;
+}
+.home header .searchbar .search .engineselect:hover{
+    background-color: dodgerblue;
+}
+.home header .searchbar .search .search-main{
+    position: relative;
+    display: inline-block;
+}
+.home header .searchbar .search .search-main input[type=text]{
+    font-size: 200%;
+    width: 500px;
+    border: 2px solid blue;
+    border-radius: 0 15px 15px 0;
+}
+.home header .searchbar .search .search-main .search-button{
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 5px;
+    border: 1px solid blueviolet;
+    background-color: greenyellow;
+}
+.home header .searchbar .search .search-main .search-button:hover{
+    background-color: green;
+}
+.home header .github{
+    position: fixed;
+    right: 0;
+    display: inline;
+    padding: 30px 20px;
+}
+.home header .github a{
+    color: #000;
+}

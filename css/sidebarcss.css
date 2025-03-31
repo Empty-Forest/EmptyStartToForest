@@ -1,0 +1,175 @@
+/* Google Font css 导入 */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+* {
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  /*扩展侧边栏整体样式*/
+.sidebar{
+  height: 100%;
+  width: 240px;
+  position: fixed;/*固定整体大小位置*/
+  background-color: blue;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+/* 扩展侧边栏头部样式 */
+.sidebar header{
+  height: 80px;
+  position: fixed;
+  align-items: center;
+}
+/*网站logo位置样式*/
+.sidebar header .websitelogo{
+  width: 100%;
+  height: 100%;
+}
+
+/* 扩展侧边栏底部样式 */
+.sidebar footer{
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.sidebar footer .about{
+  width: 240px;
+  align-items: center;
+}
+.sidebar footer .about a{
+  text-decoration: none;/*清除链接下划线*/
+  font-size: 200%;
+  white-space: nowrap;/*保持文字位置不改变*/
+}
+.sidebar footer .about a i{
+  padding: 2px 10px 2px 25px;
+}
+.sidebar footer .about a span{
+  padding-left: 10px;
+}
+
+/* 扩展侧边栏中间样式 */
+.sidebar main{
+  top: 80px;
+  bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: fixed;
+  align-items: center;
+}
+.sidebar main .nav-lists{
+  width: 240px;
+}
+.sidebar main .nav-lists .sum-lists{
+  list-style: none;/*取消列表前部标记以及将列表页边距变为0*/
+  margin: 0;
+  padding: 0;
+}
+.sidebar main .nav-lists .sum-lists .sub-list{
+  font-size: 120%;
+  padding: 5px 30px;
+}
+.sidebar main .nav-lists .sum-lists .sub-list:hover{
+  background-color: aqua;/*鼠标移至分类时颜色改变以提醒*/
+}
+.sidebar main .nav-lists .sum-lists .sub-list a{
+  text-decoration: none;
+  color: #fff;
+  white-space: nowrap;
+}
+.sidebar main .nav-lists .sum-lists .sub-list a span{
+  padding-left: 30px;
+}
+.sidebar main .nav-lists .sum-lists .sub-list ul{
+  list-style: none;
+  padding: 5px 25px 5px 23px;
+  display: none;
+  position: relative;
+}
+.sidebar main .nav-lists .sum-lists .sub-list.show ul{
+  display: block;/*按键展开子导航*/
+}
+.sidebar main .nav-lists .sum-lists .sub-list a i.arrow{
+  transition: all 0.5s ease;
+}
+.sidebar main .nav-lists .sum-lists .sub-list.show a i.arrow{
+  transform: rotate(-180deg);/*按键旋转*/
+  transition: all 0.5s ease;
+}
+.sidebar main .nav-lists .sum-lists .sub-list ul li{
+  padding: 2px 0;
+  opacity: 0.6;/*在鼠标未移至子导航列表时颜色为淡色*/
+}
+.sidebar main .nav-lists .sum-lists .sub-list ul li:hover{
+  opacity: 1;/*在鼠标移至子导航列表时颜色明显*/
+}
+
+/*侧边栏收起时样式*/
+.sidebar.close{
+  width: 80px;
+  transition: all 0.3s ease;
+}
+.sidebar.close ~ .home{
+  width: calc(100% - 80px);
+  left: 80px;
+  transition: all 0.3s ease;
+}
+.sidebar.close main .nav-lists{
+  width: 80px;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list a{
+  cursor: default;/*鼠标样式改变为默认样式*/
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list{
+  border-radius: 0 15px 0 0;
+  display: flex;
+  position: relative;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list:hover{
+  width: 185px;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list a span{
+  display: none;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list:hover a span{
+  display: inline;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list a i.arrow{
+  display: none;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list ul{
+  position:absolute;
+  display: block;
+  padding-top: 30px;
+  top: 0;
+  background-color: aqua;
+  clip-path: inset(30px 0 0 50px);/*截取遮挡的部分*/
+  border-radius: 0 0 15px 0;
+}
+.sidebar.close main .nav-lists .sum-lists .sub-list ul li{
+  padding-left: 0;
+}
+.sidebar.close footer{
+  width: 80px;
+  align-items: center;
+  transition:all 0.3s ease;
+}
+.sidebar.close footer:hover{
+  width: 240px;
+  border-radius: 0 15px 15px 0;
+}
+.sidebar.close footer .about{
+  width: 80px;
+}
+.sidebar.close footer .about a span{
+  display: none;
+}
+.sidebar.close footer:hover .about a span{
+  display: inline;
+}
