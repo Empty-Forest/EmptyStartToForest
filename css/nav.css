@@ -1,0 +1,18 @@
+main .information .jumpto{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    background-color: greenyellow;
+    height: 40px;
+    width: 80px;
+    white-space: nowrap;
+    font-size: 120%;
+    text-align: center;
+    text-decoration: none;
+}
+main .information .jumpto i,span{
+    padding: 8px 0;
+}

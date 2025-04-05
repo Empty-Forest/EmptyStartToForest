@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/websites/index/EmptyForestico.ico"><!--网页图标-->
+    <meta name="author" content="EmptyForest"><!--定义页面作者-->
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Boxicons CSS -->
+    <title>导航至Deepseek</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html" class="websitelogo">
+                <img src="/websites/index/EmptyForestNavigationWebsiteLogo.png">
+            </a>
+        </div>
+        <div class="searchbar">
+            <form action="/search" class="search">
+                <select class="engineselect">
+                    <option value="bing" data-url="https://www.bing.com/search?q={query}">必应</option>
+                    <option value="google" data-url="https://www.google.com/search?q={query}">谷歌</option>
+                    <option value="baidu" data-url="https://www.baidu.com/s?wd={query}">百度</option>
+                </select>
+                <div class="search-main">
+                    <input type="text" class="search-input" placeholder="输入以搜索..." autocomplete="off">
+                    <button class="search-button" type="submit">搜索</button>
+                </div>
+            </form>
+        </div>
+        <div class="github">
+            <a href="https://github.com/Empty-Forest/EmptyStartToForest">
+                <i class='bx bxl-github'>Github</i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="information">
+            <div class="information-logo">
+                <img src="./DeepSeek.png">
+            </div>
+            <div class="brief">
+                <p>
+                    DeepSeek 是由深度求索（DeepSeek）自主研发的高性能大语言模型，以其开源、轻量化和强大的多场景适应能力受到广泛关注。 为用户提供 智能对话、推理、AI搜索、文件处理、翻译、解题、创意写作、编程 等多种服务
+                </p>
+            </div>
+            <a href="https://www.deepseek.com/" target="_blank" class="jumpto">
+                <i class='bx bx-link-external'></i>
+                <span>跳转</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <span><i class='bx bx-copyright'>2025 Design by <a href="https://github.com/Empty-Forest" target="_blank" rel="nofollow noopener noreferrer">EmptyForest</a></i></span>
+    </footer>
+    <script src="/js/search.js">搜索栏控制</script>
+</body>
+</html>
