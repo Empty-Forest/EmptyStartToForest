@@ -13,7 +13,7 @@
   height: 100%;
   width: 240px;
   position: fixed;/*固定整体大小位置*/
-  background-color: blue;
+  background-color: darkblue;
   z-index: 100;
   transition: all 0.3s ease;
 }
@@ -65,6 +65,8 @@
 }
 .sidebar main .nav-lists{
   width: 240px;
+  height: 100%;
+  overflow: auto;
 }
 .sidebar main .nav-lists .sum-lists{
   list-style: none;/*取消列表前部标记以及将列表页边距变为0*/
@@ -74,9 +76,10 @@
 .sidebar main .nav-lists .sum-lists .sub-list{
   font-size: 120%;
   padding: 5px 30px;
+  border-bottom: 1px solid blanchedalmond;
 }
 .sidebar main .nav-lists .sum-lists .sub-list:hover{
-  background-color: aqua;/*鼠标移至分类时颜色改变以提醒*/
+  background-color: lightskyblue;/*鼠标移至分类时颜色改变以提醒*/
 }
 .sidebar main .nav-lists .sum-lists .sub-list a{
   text-decoration: none;
@@ -94,6 +97,7 @@
 }
 .sidebar main .nav-lists .sum-lists .sub-list.show ul{
   display: block;/*按键展开子导航*/
+  border-top: 1px solid antiquewhite;
 }
 .sidebar main .nav-lists .sum-lists .sub-list a i.arrow{
   transition: all 0.5s ease;
@@ -122,6 +126,7 @@
 }
 .sidebar.close main .nav-lists{
   width: 80px;
+  overflow: visible;
 }
 .sidebar.close main .nav-lists .sum-lists .sub-list a{
   cursor: default;/*鼠标样式改变为默认样式*/
@@ -148,7 +153,7 @@
   display: block;
   padding-top: 30px;
   top: 0;
-  background-color: aqua;
+  background-color: lightskyblue;
   clip-path: inset(30px 0 0 50px);/*截取遮挡的部分*/
   border-radius: 0 0 15px 0;
 }

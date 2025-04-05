@@ -3,7 +3,7 @@
     left: 240px;/*离左侧的大小*/
     height: 100%;
     position: fixed;/*固定整体大小位置*/
-    background-color: blueviolet;
+    background-color: whitesmoke;
     transition: all 0.3s ease;
 }
 /* 主页导航上部 */
@@ -66,7 +66,90 @@
     right: 0;
     display: inline;
     padding: 30px 20px;
+    opacity: 0.7;
+}
+.home header .github:hover{
+    opacity: 1;
 }
 .home header .github a{
     color: #000;
+}
+
+/*主页导航中部*/
+.home main{
+    overflow: auto;
+    height: 90%;
+    scroll-behavior: smooth;/*导航时平滑滚动*/
+    white-space: nowrap;
+}
+.home main .nav{
+    padding: 20px 50px;
+}
+.home main .nav .nav-title{
+    font-size: 150%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+}
+/*单一导航*/
+.home main ul{
+    list-style: none;
+    padding: 5px 10px 5px 60px;
+    display: flex;
+}
+.home main ul li{
+    display: flex;
+    width: 200px;
+    height: 80px;
+    margin: 5px 10px;
+    border: 2px outset antiquewhite;
+    border-radius: 15px;
+    background-color: powderblue;
+}
+.home main ul li:hover{
+    background-color: burlywood;
+    border: 2px inset antiquewhite;
+}
+.home main ul li a{
+    display: flex;
+    padding: 5px 10px;
+    text-decoration: none;
+    width: inherit;/*继承上一元素宽度确保宽度调整时不变*/
+}
+.home main ul li a img{
+    position: relative;
+    left: 0;
+    height: 100%;
+    width: auto;
+}
+.home main ul li a span{
+    font-size: 150%;
+    display: block;
+    width: auto;
+    margin: auto;
+}
+/*带副导航的导航*/
+.home main .nav .subnav{
+    margin-left: 60px;
+}
+.home main .nav .subnav .nav-subtitle{
+    font-size: 130%;
+    padding: 3px 0;
+    border-bottom: 1px solid #000;
+}
+.home main .nav .subnav ul{
+    list-style: none;
+    padding: 5px 0;
+    display: flex;
+}
+/*底部备注*/
+.home main .bottom{
+    height: 5%;
+    background-color: burlywood;
+}
+.home main .bottom span{
+    font-size: 120%;
+    padding: 0 35%;
+}
+.home main .bottom span a{
+    text-decoration: none;
 }

@@ -6,10 +6,12 @@
     <link rel="shortcut icon" href="./websites/index/EmptyForestico.ico"><!--网页图标-->
     <link rel="stylesheet" href="./css/sidebarcss.css">
     <link rel="stylesheet" href="./css/homecss.css">
-    <!-- Boxicons CSS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Boxicons CSS -->
     <title>EmptyForest导航网站</title>
-    
+    <!--元数据-->
+    <meta name="keywords" content="导航网站,EmptyForest,Empty-Forest,静态导航网站"><!--定义文档关键词，用于搜索引擎-->
+    <meta name="description" content="EmptyForest的静态导航网站"><!--定义web页面描述-->
+    <meta name="author" content="EmptyForest"><!--定义页面作者-->
 </head>
 <body>
     <!--左侧侧边栏，默认为打开状态-->
@@ -26,31 +28,114 @@
                 <!--总分类-->
                 <ul class="sum-lists">
                     <li class="sub-list">
-                        <a href="#">
+                        <a href="#常用">
                             <i class='bx bxs-star' ></i>
                             <span>常用</span>
                         </a>
                     </li>
                     <li class="sub-list">
-                        <a href="#">
-                            <i class='bx bx-key'></i>
+                        <a href="#实用工具">
+                            <i class='bx bx-wrench'></i>
                             <span>实用工具</span>
                             <i class='bx bxs-chevron-down arrow'></i>
                         </a>
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="#学习工具">
+                                    <span>学习工具</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#网盘资源">
                                     <span>网盘资源</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#图像设计">
                                     <span>图像设计</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="#信息生成">
                                     <span>信息生成</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-list">
+                        <a href="#计算机技术">
+                            <i class='bx bx-desktop'></i>
+                            <span>计算机技术</span>
+                            <i class='bx bxs-chevron-down arrow'></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#技术工具">
+                                    <span>技术工具</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#人工智能">
+                                    <span>人工智能</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#代码学习">
+                                    <span>代码学习</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#游戏建模">
+                                    <span>游戏建模</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#域名管理">
+                                    <span>域名管理</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-list">
+                        <a href="#文献检索">
+                            <i class='bx bx-file-find'></i>
+                            <span>文献检索</span>
+                            <i class='bx bxs-chevron-down arrow'></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#国内平台">
+                                    <span>国内平台</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#国外平台">
+                                    <span>国外平台</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-list">
+                        <a href="#科学上网">
+                            <i class='bx bxs-plane-alt'></i>
+                            <span>科学上网</span>
+                        </a>
+                    </li>
+                    <li class="sub-list">
+                        <a href="#区块链">
+                            <i class='bx bx-network-chart'></i>
+                            <span>区块链</span>
+                            <i class='bx bxs-chevron-down arrow'></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#市场平台">
+                                    <span>市场平台</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#链上工具">
+                                    <span>链上工具</span>
                                 </a>
                             </li>
                         </ul>
@@ -61,7 +146,7 @@
         <!--关于本站占底部-->
         <footer>
             <div class="about">
-                <a href="#">
+                <a href="./about.html">
                     <i class='bx bxs-home-alt-2'></i>
                     <span>关于本站</span>
                 </a>
@@ -83,29 +168,468 @@
                         <option value="baidu" data-url="https://www.baidu.com/s?wd={query}">百度</option>
                     </select>
                     <div class="search-main">
-                        <input type="text" class="search-input" placeholder="输入以搜索...">
+                        <input type="text" class="search-input" placeholder="输入以搜索..." autocomplete="off">
                         <button class="search-button" type="submit">搜索</button>
                     </div>
                 </form>
             </div>
             <!--Github图标-->
             <div class="github">
-                <a href="https://github.com/Empty-Forest" target="_blank" rel="noopener noreferrer nofollow">
+                <a href="https://github.com/Empty-Forest/EmptyStartToForest" target="_blank" rel="noopener noreferrer nofollow">
                     <i class='bx bxl-github'>Github</i>
                 </a>
             </div>
         </header>
         <!--中间为导航-->
         <main>
-
+            <!--常用-->
+            <div class="nav" id="常用">
+                <div class="nav-title">
+                    <i class='bx bxs-star' ></i>
+                    <span>常用</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./websites/bilibili/bilbili.html" target="_blank">
+                            <img src="./websites/bilibili/Bilibili.png">
+                            <span>Bilibili</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./websites/youtube/youtube.html" target="_blank">
+                            <img src="./websites/youtube/YouTube.png">
+                            <span>YouTube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--实用工具-->
+            <div class="nav" id="实用工具">
+                <div class="nav-title">
+                    <i class='bx bx-wrench'></i>
+                    <span>实用工具</span>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="学习工具">
+                        <i class='bx bx-label'></i>
+                        <span>学习工具</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/obsidian/obsidian.html" target="_blank">
+                                <img src="./websites/obsidian/Obsidian.png">
+                                <span>Obsidian</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/zetore/zetore.html" target="_blank">
+                                <img src="./websites/zetore/Zetore.png">
+                                <span>Zetore</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="网盘资源">
+                        <i class='bx bx-label'></i>
+                        <span>网盘资源</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/123/123.html" target="_blank">
+                                <img src="./websites/123/123.png">
+                                <span>123云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/baiduNet/baiduNet.html" target="_blank">
+                                <img src="./websites/baiduNet/BaiduNet.png">
+                                <span>百度云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/115/115.html" target="_blank">
+                                <img src="./websites/115/115.png">
+                                <span>115云盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/quark/quark.html" target="_blank">
+                                <img src="./websites/quark/Quark.png">
+                                <span>夸克网盘</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/pikpak/pikpak.html" target="_blank">
+                                <img src="./websites/pikpak/PikPak.png">
+                                <span>PikPak</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="图像设计">
+                        <i class='bx bx-label'></i>
+                        <span>图像设计</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/icomaker/icomaker.html" target="_blank">
+                                <img src="./websites/icomaker/ICOmaker.png">
+                                <span>ICO图标制作</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/drawio/drawio.html" target="_blank">
+                                <img src="./websites/drawio/Drawio.png">
+                                <span>Draw.io</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/drawDB/drawDB.html" target="_blank">
+                                <img src="./websites/drawDB/DrawDB.png">
+                                <span>drawDB</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/boxicons/boxicons.html" target="_blank">
+                                <img src="./websites/boxicons/Boxicons.png">
+                                <span>Boxicons</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="信息生成">
+                        <i class='bx bx-label'></i>
+                        <span>信息生成</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/usaid/usaid.html" target="_blank">
+                                <img src="./websites/usaid/USAId.png">
+                                <span>身份生成</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/uuidMaker/uuidMaker.html" target="_blank">
+                                <img src="./websites/uuidMaker/UUIDMaker.png">
+                                <span>UUID生成</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--计算机技术-->
+            <div class="nav" id="计算机技术">
+                <div class="nav-title">
+                    <i class='bx bx-desktop'></i>
+                    <span>计算机技术</span>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="技术工具">
+                        <i class='bx bx-label'></i>
+                        <span>技术工具</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/visualstudio/vs.html" target="_blank">
+                                <img src="./websites/visualstudio/VS.png">
+                                <span>VisualStudio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/docker/docker.html" target="_blank">
+                                <img src="./websites/docker/Docker.jpg">
+                                <span>Docker</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="人工智能">
+                        <i class='bx bx-label'></i>
+                        <span>人工智能</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/deepseek/deepseek.html" target="_blank">
+                                <img src="./websites/deepseek/DeepSeek.png">
+                                <span>DeepSeek</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/chatgpt/chatgpt.html" target="_blank">
+                                <img src="./websites/chatgpt/ChatGPT.png">
+                                <span>ChatGPT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="代码学习">
+                        <i class='bx bx-label'></i>
+                        <span>代码学习</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/github/github.html" target="_blank">
+                                <img src="./websites/github/Github.png">
+                                <span>Github</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/stackoverflow/stackoverflow.html" target="_blank">
+                                <img src="./websites/stackoverflow/StackOverflow.png">
+                                <span>StackOverflow</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/runoob/runoob.html" target="_blank">
+                                <img src="./websites/runoob/Runoob.png">
+                                <span>菜鸟教程</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="游戏建模">
+                        <i class='bx bx-label'></i>
+                        <span>游戏建模</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/blender/blender.html" target="_blank">
+                                <img src="./websites/blender/Blender.png">
+                                <span>Blender</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/unreal/unreal.html" target="_blank">
+                                <img src="./websites/unreal/Unreal.png">
+                                <span>Unreal</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/godot/godot.html" target="_blank">
+                                <img src="./websites/godot/Godot.png">
+                                <span>Godot</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/unity/unity.html" target="_blank">
+                                <img src="./websites/unity/Unity.png">
+                                <span>Unity</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="域名管理">
+                        <i class='bx bx-label'></i>
+                        <span>域名管理</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/cloudflare/cloudflare.html" target="_blank">
+                                <img src="./websites/cloudflare/Cloudflare.png">
+                                <span>Cloudflare</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/clouDNS/clouDNS.html" target="_blank">
+                                <img src="./websites/clouDNS/ClouDNS.png">
+                                <span>ClouDNS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/namesilo/namesilo.html" target="_blank">
+                                <img src="./websites/namesilo/Namesilo.png">
+                                <span>Namesilo</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--文献检索-->
+            <div class="nav" id="文献检索">
+                <div class="nav-title">
+                    <i class='bx bx-file-find'></i>
+                    <span>文献检索</span>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="国内平台">
+                        <i class='bx bx-label'></i>
+                        <span>国内平台</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/CNKI/CNKI.html" target="_blank">
+                                <img src="./websites/CNKI/CNKI.png">
+                                <span>知网</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/xmol/xmol.html" target="_blank">
+                                <img src="./websites/xmol/XMOL.png">
+                                <span>X-MOL</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/wanfang/wangfang.html" target="_blank">
+                                <img src="./websites/wanfang/WanFang.png">
+                                <span>万方</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/weipu/weipu.html" target="_blank">
+                                <img src="./websites/weipu/WeiPu.jpg">
+                                <span>维普</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="国外平台">
+                        <i class='bx bx-label'></i>
+                        <span>国外平台</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/webofscience/webofscience.html" target="_blank">
+                                <img src="./websites/webofscience/WebOfScience.png">
+                                <span>WebofScience</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/sciencedirect/sciencedirect.html" target="_blank">
+                                <img src="./websites/sciencedirect/ScienceDirect.png">
+                                <span>ScienceDirect</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/wiley/wiley.html" target="_blank">
+                                <img src="./websites/wiley/Wiley.png">
+                                <span>Wiley</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/ACS/ACS.html" target="_blank">
+                                <img src="./websites/ACS/ACS.png">
+                                <span>ACS</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/nature/nature.html" target="_blank">
+                                <img src="./websites/nature/Nature.jpg">
+                                <span>Nature</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="./websites/science/science.html" target="_blank">
+                                <img src="./websites/science/Science.png">
+                                <span>Science</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/googleScholar/googleScholar.html" target="_blank">
+                                <img src="./websites/googleScholar/GoogleScholar.png">
+                                <span>Google学术</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/springerLink/springerLink.html" target="_blank">
+                                <img src="./websites/springerLink/SpringerLink.jpg">
+                                <span>SpringerLink</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--科学上网-->
+            <div class="nav" id="科学上网">
+                <div class="nav-title">
+                    <i class='bx bxs-plane-alt'></i>
+                    <span>科学上网</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="./websites/ciyuanyun/ciyuanyun.html" target="_blank">
+                            <img src="./websites/ciyuanyun/Clash.png">
+                            <span>次元云</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--区块链-->
+            <div class="nav" id="区块链">
+                <div class="nav-title">
+                    <i class='bx bx-network-chart'></i>
+                    <span>区块链</span>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="市场平台">
+                        <i class='bx bx-label'></i>
+                        <span>市场平台</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/binance/binance.html" target="_blank">
+                                <img src="./websites/binance/Binance.png">
+                                <span>Binance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/okx/okx.html" target="_blank">
+                                <img src="./websites/okx/OKX.png">
+                                <span>OKX</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/pionex/pionex.html" target="_blank">
+                                <img src="./websites/pionex/Pionex.png">
+                                <span>Pionex</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/deribit/deribit.html" target="_blank">
+                                <img src="./websites/deribit/Deribit.png">
+                                <span>Deribit</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./websites/biyapay/biyapay.html" target="_blank">
+                                <img src="./websites/biyapay/BiyaPay.png">
+                                <span>BiyaPay</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subnav">
+                    <div class="nav-subtitle" id="链上工具">
+                        <i class='bx bx-label'></i>
+                        <span>链上工具</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="./websites/gmgn/gmgn.html" target="_blank">
+                                <img src="./websites/gmgn/GMGN.png">
+                                <span>GMGN</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--底部备注-->
+            <div class="bottom">
+                <span><i class='bx bx-copyright'>2025 Design by <a href="https://github.com/Empty-Forest" target="_blank" rel="nofollow noopener noreferrer">EmptyForest</a></i></span>
+            </div>
         </main>
-        <!--末尾留一些备注-->
-        <footer>
-
-        </footer>
     </div>
-<!--脚本-->
-    <script src="./js/search.js"></script>
+    <!--脚本-->
+    <script src="./js/search.js">搜索栏控制</script>
     <script>
         /*控制子列表展开*/
         let showarrow = document.querySelectorAll(".arrow");

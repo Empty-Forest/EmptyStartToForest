@@ -1,0 +1,160 @@
+/* Google Font css 导入 */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+* {
+    font-family: "Ma Shan Zheng", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+body{
+    background-color: antiquewhite;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: inline;
+    background-color: aliceblue;
+}
+header .logo{
+    height: 80px;
+    width: 240px;
+    display: inline;
+}
+header .logo .websitelogo img{
+    height: 80px;
+    width: auto;
+}
+header .searchbar{
+    display: inline;
+    position: absolute;
+    left: 25%;
+    margin: 10px 0;
+    padding: 10px 50px;
+    white-space: nowrap;
+}
+header .searchbar .search{
+    display: flex;
+}
+header .searchbar .search .engineselect{
+    font-size: 200%;
+    border-radius: 15px 0 0 15px;
+    cursor: pointer;
+    border: 2px solid blue;
+    background-color: deepskyblue;
+}
+header .searchbar .search .engineselect:hover{
+    background-color: dodgerblue;
+}
+header .searchbar .search .search-main{
+    position: relative;
+    display: inline-block;
+}
+header .searchbar .search .search-main input[type=text]{
+    font-size: 200%;
+    width: 500px;
+    border: 2px solid blue;
+    border-radius: 0 15px 15px 0;
+}
+header .searchbar .search .search-main .search-button{
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 5px;
+    border: 1px solid blueviolet;
+    background-color: greenyellow;
+}
+header .searchbar .search .search-main .search-button:hover{
+    background-color: green;
+}
+header .github{
+    position: fixed;
+    right: 0;
+    display: inline;
+    padding: 30px 20px;
+    opacity: 0.7;
+}
+header .github:hover{
+    opacity: 1;
+}
+header .github a{
+    color: #000;
+}
+footer{
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+    padding: 0 40%;
+    white-space: nowrap;
+    background-color: burlywood;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+}
+main{
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    overflow-y: auto;
+}
+main .information{
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid aliceblue;
+    background-color: #fff;
+}
+main .information .information-logo{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+}
+main .information .information-logo img{
+    height: inherit;
+}
+main .information .brief{
+    top:10px;
+    position: absolute;
+    display: inline-block;
+    width: 560px;
+    font-size: 120%;
+}
+
+/*响应式，当屏幕宽度小于964px时改变布局*/
+@media screen and (max-width : 964px) {
+    header{
+        display: block;
+        height: 120px;
+    }
+    header .searchbar{
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        padding: 0 5%;
+        white-space: nowrap;
+        background-color: skyblue;
+        transform: translateY(-35%);
+    }
+}
+
+/*响应式，当屏幕宽度小于600px时改变布局*/
+@media screen and (max-width : 600px) {
+    header .searchbar{
+        padding: 0 10%;
+    }
+    header .searchbar .search .search-main input[type=text]{
+        font-size: 200%;
+        width: 100%;
+    }
+    footer{
+        padding: 0;
+    }
+}
