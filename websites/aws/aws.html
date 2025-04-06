@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/websites/index/EmptyForestico.ico"><!--网页图标-->
+    <meta name="author" content="EmptyForest"><!--定义页面作者-->
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!-- Boxicons CSS -->
+    <title>导航至亚马逊云</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html" class="websitelogo">
+                <img src="/websites/index/EmptyForestNavigationWebsiteLogo.png">
+            </a>
+        </div>
+        <div class="searchbar">
+            <form action="/search" class="search">
+                <select class="engineselect">
+                    <option value="bing" data-url="https://www.bing.com/search?q={query}">必应</option>
+                    <option value="google" data-url="https://www.google.com/search?q={query}">谷歌</option>
+                    <option value="baidu" data-url="https://www.baidu.com/s?wd={query}">百度</option>
+                </select>
+                <div class="search-main">
+                    <input type="text" class="search-input" placeholder="输入以搜索..." autocomplete="off">
+                    <button class="search-button" type="submit">搜索</button>
+                </div>
+            </form>
+        </div>
+        <div class="github">
+            <a href="https://github.com/Empty-Forest/EmptyStartToForest">
+                <i class='bx bxl-github'>Github</i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="information">
+            <div class="information-logo">
+                <img src="./AWS.png">
+            </div>
+            <div class="brief">
+                <p>
+                    亚马逊云计算服务是亚马逊公司旗下的子公司，向个人、企业和政府提供按需即用云计算平台以及应用程序接口，并按照使用量计费。这些云计算Web服务通过亚马逊网络服务的服务器集群提供分布式计算处理能力和软件工具。这其中的一项服务是亚马逊弹性云计算，该服务通过互联网为用户提供实时在线的虚拟化计算机集群
+                </p>
+            </div>
+            <a href="https://aws.amazon.com/" target="_blank" class="jumpto">
+                <i class='bx bx-link-external'></i>
+                <span>跳转</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <span><i class='bx bx-copyright'>2025 Design by <a href="https://github.com/Empty-Forest" target="_blank" rel="nofollow noopener noreferrer">EmptyForest</a></i></span>
+    </footer>
+    <script src="/js/search.js">搜索栏控制</script>
+</body>
+</html>
